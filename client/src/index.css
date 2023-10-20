@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+
+}
+
+.content{
+ min-height:80vh;
+ 
+}
+.register-page{
+/* background-color:cyan; */
+  height:100vh;
+  /* width:60; */
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
+}
+
+.form-cls{
+  width:50%;
+ text-align:center;
+ border:2px solid black;
+ padding:5px;
+}
+
+
+
+/* transection page*/
+
+.filters{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:15px 25px;
+  box-shadow:0 0 3px;
+ 
+  border-radius:15px;
+  margin-bottom:5px;
+  
+}
+
+
+.oneIcon{
+  font-size:20px;
+  cursor:pointer;
+}
+.active-icon{
+  color:black;
+}
+
+.inactive-icon{
+  color:white;
+}
+
+.switch-icon{
+  border:1px solid black;
+  border-radius:5px;
+  padding:10px 15px;
+}
+
+//side bar
+
+.sidebar{
+ 
+  margin:5px;
+
+}
+.ant-select-selection {
+  background-color: green;
+}
+
+/*
+.ant-table-tbody{
+//  padding:-40 !important;
+  
+}
+.ant-table-tbody > tr > td{
+
+  //padding-left: 0 !important;
+}
+*/
