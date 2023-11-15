@@ -5,7 +5,15 @@
        { "src": "./client/src/index.js", "use": "@vercel/node" }
     ],
     "routes": [
-       { "src": "/(.*)", "dest": "/app.js" }
+       { "src": "/", "dest": "/" },
+       {
+         "src":"/register",
+         "dest":"/"
+       },
+       {
+         "src":"/login",
+         "dest":"/"
+       }      
     ],
     "REWRITES":[{
       "SOURCE":"/(.*)","DESTINATION":"/"
