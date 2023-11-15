@@ -2,18 +2,13 @@
     "version": 2,
     "name": "Budget-buddy",
     "builds": [
-       { "src": "./client/src/index.js", "use": "@vercel/node" }
+       { "src": "./client/package.json", "use": "@vercel/node" },
+       {"src":"./server/package.json","use":"@vercel/node"}
     ],
     "routes": [
-       { "src": "/", "dest": "/" },
-       {
-         "src":"/register",
-         "dest":"/"
-       },
-       {
-         "src":"/login",
-         "dest":"/"
-       }      
+       { "src": "/", "dest": "/client/build/index.html" },
+       {"src":"/register", "dest":"/client/build/index.html" },
+       {"src":"/login","dest":"/client/build/index.html"}      
     ],
     "REWRITES":[{
       "SOURCE":"/(.*)","DESTINATION":"/"
