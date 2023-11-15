@@ -26,7 +26,8 @@
     "start": "react-scripts start",
     "server": "nodemon server.js",
     "dev": "concurrently \"npm run server\" \"npm run client\" ",
-    "client": "npm start --prefix client"
+    "client": "npm start --prefix client",
+    "build":"react-scripts build"
   },
   "eslintConfig": {
     "extends": [

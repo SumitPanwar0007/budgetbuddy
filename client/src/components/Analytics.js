@@ -54,7 +54,7 @@ const totalTransection= allTransection.length;
                     Total 
                      Transection: <br /> <span className='text-blue-900'>{totalTransection} </span>
                 </div>
-                <div className="text-xl md:text-3xl  ">
+                <div className="text-xl md:text-2xl  ">
                     <h3 className='text-[#166534] md:my-2 '>Income: ₹ {totalIncomeTransection.length}</h3>
                     <h3 className='text-[#991b1b] md:my-2'>Expense: ₹ {totalExpenceTransection.length}</h3>
                     <div className='gap-6 md:my-4 '>
@@ -81,7 +81,7 @@ const totalTransection= allTransection.length;
                 <div className='text-2xl md:text-3xl py-2 bg-[#9191d2]/[0.8] text-black font-bold  mb-6 rounded-t-lg text-center'>
                     Total Turnover: <br /> <span className='text-blue-900'> {totalTurnover} </span>
                 </div>
-                <div className="text-xl md:text-3xl">
+                <div className="text-xl md:text-2xl">
                     <h3 className='text-[#166534] md:my-2'>Income:  ₹ {totalIncomeTurnover}</h3>
                     <h3 className='text-[#991b1b] md:my-2'>Expense: ₹ {totalExpenceTurnover}</h3>
                     <div>
