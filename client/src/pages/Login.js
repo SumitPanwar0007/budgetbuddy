@@ -15,7 +15,7 @@ const [loading,setLoading]= useState(false);
        try{
         setLoading(true)
 
-        const {data} = await axios.post('/users/login',value)
+        const {data} = await axios.post('/api/users/login',value)
         setLoading(false)
         message.success("login Successfull")
         localStorage.setItem('user',JSON.stringify({...data.user,password:''}))

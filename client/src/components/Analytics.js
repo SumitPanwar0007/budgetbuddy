@@ -13,7 +13,8 @@ const categories=[
             "bills",
             "medical",
             "fee",
-            "tax"
+            "tax",
+            "other"
 ]
 
     //total transections
