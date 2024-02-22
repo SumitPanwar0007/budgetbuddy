@@ -5,7 +5,7 @@ const cors= require('cors');
 const connectDb = require('./Config/connectDb');
 const userRoutes = require('./routes/userRoutes')
 const userTransection=require('./routes/transectionRoutes')
-// const path=require("path")
+const path=require("path")
 
 
 //configure the env file
@@ -30,11 +30,11 @@ app.use("/users",userRoutes);
 app.use("/transection",userTransection)
 
 //static files
-app.use(express.static(path.join(__dirname),"./client/build"));
+// app.use(express.static(path.join(__dirname),"./client/build"));
 
-app.get("*", function(req,res){
-    res.sendFile(path.join(__dirname,"./client/build/index.html"));
-});
+// app.get("*", function(req,res){
+//     res.sendFile(path.join(__dirname,"./client/build/index.html"));
+// });
 
 
 

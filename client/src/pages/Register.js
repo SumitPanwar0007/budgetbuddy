@@ -15,7 +15,8 @@ const [loading,setLoading]= useState(false);
   const handleSubmit=async (value)=>{
     try{
       setLoading(true);
-      await axios.post('/api/users/register',value)
+      console.log(value)
+      await axios.post('http://localhost:8081/users/register',value)
       message.success('Registration successfull')
       setLoading(false);
       navigate("/login");
