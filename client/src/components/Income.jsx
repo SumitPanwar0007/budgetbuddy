@@ -21,7 +21,7 @@ const Income = () => {
         try {
           const user = JSON.parse(localStorage.getItem('user'));
           setLoading(true);
-          const res = await axios.post('/transection/get-transection', {
+          const res = await axios.post('https://budgetbuddy-aml3.onrender.com/transection/get-transection', {
             user_id: user._id,
             frequency,
             selectDate,

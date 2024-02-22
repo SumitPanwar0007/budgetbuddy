@@ -32,7 +32,7 @@ const Layout = ({children}) => {
       try {
         const user = JSON.parse(localStorage.getItem('user'));
         setLoading(true);
-        const res = await axios.post('/transection/get-transection', {
+        const res = await axios.post('https://budgetbuddy-aml3.onrender.com/transection/get-transection', {
           user_id: user._id,
           frequency,
           selectDate,
@@ -58,7 +58,7 @@ const Layout = ({children}) => {
       const user = JSON.parse(localStorage.getItem('user'));
       setLoading(true);
       if (editable) {
-        await axios.post('/transection/edit-transection', {
+        await axios.post('https://budgetbuddy-aml3.onrender.com/transection/edit-transection', {
           payload: {
             ...values,
             user_id: user._id,
@@ -68,7 +68,7 @@ const Layout = ({children}) => {
         setLoading(false);
         message.success('Transection Updated Successfully');
       } else {
-        await axios.post('/transection/add-transection', {
+        await axios.post('https://budgetbuddy-aml3.onrender.com/transection/add-transection', {
           ...values,
           user_id: user._id,
         });
