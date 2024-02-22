@@ -16,7 +16,7 @@ const [loading,setLoading]= useState(false);
     try{
       setLoading(true);
       console.log(value)
-      await axios.post('http://localhost:8081/users/register',value)
+      await axios.post('https://budgetbuddy-aml3.onrender.com/users/register',value)
       message.success('Registration successfull')
       setLoading(false);
       navigate("/login");
