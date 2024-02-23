@@ -21,7 +21,7 @@ app.use(morgan('dev'))
 app.use(express.json())
 // app.use(cors());
 const corsOptions = {
-    origin: 'budgetbuddy-5tf1-final2.vercel.app'
+    origin: 'https://budgetbuddy-green.vercel.app/'
   };
   
   // Enable CORS middleware
